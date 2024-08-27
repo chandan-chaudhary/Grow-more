@@ -7,40 +7,42 @@ import missionImg from "../../assets/aboutUs/mission.png";
 import visionImg from "../../assets/aboutUs/vision2.png";
 import { GiEyeTarget } from "react-icons/gi";
 import { TbTargetArrow } from "react-icons/tb";
-
+import { Element } from "react-scroll";
 import vision from "./vision";
 
 function AboutUs() {
     return (
         <section className="bg-gray-100 xl:px-72">
-            <div className=" flex flex-col items-center justify-center lg:gap-y-12 l py-32 lg:pt-44 px-5">
-                <div className="flex items-center gap-x-8">
-                    <img src={teamImg} alt="" className="w-12" />
-                    <h5 className="text-3xl  font-extrabold text-blue-950">Who We Are</h5>
-                </div>
-                <div className="py-10  lg:flex items-center space-x-16 text-center lg:text-start text-xl md:text-2xl md:px-24  text-gray-600">
-                    <div className="lg:flex lg:flex-col-reverse items-center ">
-                        <img src={aboutImg1} alt=""  className="xs:max-lg:hidden w-9/12"/>
-                        <p>
-                            We accelerate our clients’ revenue through innovative solutions
-                            and empowered employees, and we’ve been doing it expertly since
-                            2021. We’ve supported the vision, and promoted the success, of 10+
-                            companies.
-                        </p>
+            <Element name='about'>
+                <div className=" flex flex-col items-center justify-center lg:gap-y-12 l py-32 lg:pt-44 px-5">
+                    <div className="flex items-center gap-x-8">
+                        <img src={teamImg} alt="" className="w-12" />
+                        <h5 className="text-3xl  font-extrabold text-blue-950">Who We Are</h5>
                     </div>
-                    <br />
-                    <div className="lg:flex lg:flex-col items-center">
-                        <img src={aboutImg2} alt="" className="" />
-                        <p className="mt-8">
-                            I GrowMoreServices & Consultancy is a unique agency in India of
-                            outsource sales and marketing, being the first to truly offer
-                            Sales as a Service to clients both large and small.
-                        </p>
+                    <div className="py-10  lg:flex items-center md:space-x-16 text-center lg:text-start text-xl md:text-2xl md:px-24  text-gray-600">
+                        <div className="lg:flex lg:flex-col-reverse items-center ">
+                            <img src={aboutImg1} alt="" className="xs:max-lg:hidden w-9/12" />
+                            <p>
+                                We accelerate our clients’ revenue through innovative solutions
+                                and empowered employees, and we’ve been doing it expertly since
+                                2021. We’ve supported the vision, and promoted the success, of 10+
+                                companies.
+                            </p>
+                        </div>
+                        <br />
+                        <div className="lg:flex lg:flex-col items-center">
+                            <img src={aboutImg2} alt="" className="" />
+                            <p className="mt-8">
+                                I GrowMoreServices & Consultancy is a unique agency in India of
+                                outsource sales and marketing, being the first to truly offer
+                                Sales as a Service to clients both large and small.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <Vision />
-            <Mission />
+                <Vision />
+                <Mission />
+            </Element>
         </section>
     );
 

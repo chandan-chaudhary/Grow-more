@@ -28,7 +28,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
 };
 // bg-[#12204d4f]]  for backgroung of img/icon
 // bg-[#12204d36] for background color for card and application
