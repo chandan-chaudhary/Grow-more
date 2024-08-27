@@ -32,7 +32,7 @@ function Header() {
   return (
     <div
       className={
-        "flex items-center justify-between bg-gray-300 text-black lg:px-28 px-8 py-3 sticky top-0 w-full z-20"
+        "flex items-center justify-between bg-gray-300 text-black lg:px-28 xl:px-72 px-8 py-3 sticky top-0 w-full z-20 cursor-pointer"
       }
     >
       <div className=" ">
@@ -54,41 +54,52 @@ function Header() {
       </div>
       <div
         className={
-          "xs:max-md:hidden flex space-x-8 font-semibold text-blue-900 uppercase"
+          "xs:max-md:hidden flex space-x-8 font-semibold text-gray-600 "
         }
       >
         <li
           onClick={() => {
             handleScrollto("landingpage");
           }}
-          className="list-none cursor-pointer hover:bg-blue-950 hover:text-white rounded-lg px-2 py-1"
+          className="list-none cursor-pointer  hover:text-applicationColor rounded-lg px-2 py-1"
         >
-          home
+          Home
         </li>
         {/* <Link to="about" smooth={true} duration={500}> */}
         <li
           onClick={() => {
             handleScrollto("about");
           }}
-          className="list-none cursor-pointer hover:bg-blue-950 hover:text-white rounded-lg px-2 py-1"
+          className="list-none cursor-pointer  hover:text-applicationColor rounded-lg px-2 py-1"
         >
-          about
+          About
         </li>
         <li
           onClick={() => {
             handleScrollto("about");
           }}
-          className="list-none cursor-pointer hover:bg-blue-950 hover:text-white rounded-lg px-2 py-1"
+          className="list-none cursor-pointer  hover:text-applicationColor rounded-lg px-2 py-1"
         >
-          services
+          Services
         </li>
 
         {/* </Link> navigate("/contact-details") */}
         <li
           onClick={() => ""}
-          className="list-none cursor-pointer hover:bg-blue-950 hover:text-white rounded-lg px-2 py-1"
+          className="list-none cursor-pointer  hover:text-applicationColor rounded-lg px-2 py-1"
         >
-          contact
+          Contact
+        </li>
+        <li
+          onClick={() => ""}
+          className="list-none cursor-pointer  hover:text-applicationColor rounded-lg px-2 py-1"
+        >
+          Login
+        </li><li
+          onClick={() => ""}
+          className="list-none cursor-pointer  hover:text-applicationColor rounded-lg px-2 py-1"
+        >
+          Register
         </li>
       </div>
     </div>
@@ -115,32 +126,47 @@ function Header() {
     return (
       <div
         ref={modalRef}
-        className="absolute border-2 shadow-2xl shadow-blue-900 rounded-lg z-10 border-gray-300 bg-white py-7 px-5 flex flex-col gap-y-3 list-none -right-5 top-12  "
+        className="absolute border-2 shadow-2xl shadow-blue-900 rounded-lg z-10 border-gray-200 bg-apptext-applicationColor py-7 px-5 flex flex-col gap-y-3 list-none -right-5 top-12  "
       >
         <li
           onClick={() => {
             handleScrollto("landingpage"), setShowHeader(false);
           }}
-          className="text-lg font-semibold uppercase hover:bg-blue-900 hover:text-white rounded-lg p-1"
+          className="text-lg font-semibold  rounded-lg p-1"
         >
-          home
+          Home
         </li>
 
         <li
           onClick={() => {
             handleScrollto("about"), setShowHeader(false);
           }}
-          className="text-lg font-semibold uppercase hover:bg-blue-900 hover:text-white rounded-lg p-1"
+          className="text-lg font-semibold  rounded-lg p-1"
         >
-          about
+          About
         </li>
         <li
           onClick={() => {
             setShowHeader(false);
           }}
-          className="text-lg font-semibold uppercase hover:bg-blue-900 hover:text-white rounded-lg p-1"
+          className="text-lg font-semibold  rounded-lg p-1"
         >
-          contact
+          Contact
+        </li>
+        <li
+          onClick={() => {
+            setShowHeader(false);
+          }}
+          className="text-lg font-semibold  rounded-lg p-1"
+        >
+          Login
+        </li> <li
+          onClick={() => {
+            setShowHeader(false);
+          }}
+          className="text-lg font-semibold  rounded-lg p-1"
+        >
+          Register
         </li>
       </div>
     );

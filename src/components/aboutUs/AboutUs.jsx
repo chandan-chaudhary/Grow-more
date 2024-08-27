@@ -12,15 +12,15 @@ import vision from "./vision";
 
 function AboutUs() {
     return (
-        <section className="bg-gray-100">
-            <div className=" flex flex-col items-center justify-center py-32 px-5">
+        <section className="bg-gray-100 xl:px-72">
+            <div className=" flex flex-col items-center justify-center lg:gap-y-12 l py-32 lg:pt-44 px-5">
                 <div className="flex items-center gap-x-8">
                     <img src={teamImg} alt="" className="w-12" />
                     <h5 className="text-3xl  font-extrabold text-blue-950">Who We Are</h5>
                 </div>
-                <div className="py-10 text-center  text-xl md:text-2xl md:px-24  text-gray-600">
-                    <div>
-                        {/* <img src={aboutImg1} alt="" /> */}
+                <div className="py-10  lg:flex items-center space-x-16 text-center lg:text-start text-xl md:text-2xl md:px-24  text-gray-600">
+                    <div className="lg:flex lg:flex-col-reverse items-center ">
+                        <img src={aboutImg1} alt=""  className="xs:max-lg:hidden w-9/12"/>
                         <p>
                             We accelerate our clients’ revenue through innovative solutions
                             and empowered employees, and we’ve been doing it expertly since
@@ -29,8 +29,8 @@ function AboutUs() {
                         </p>
                     </div>
                     <br />
-                    <div>
-                        <img src={aboutImg2} alt="" />
+                    <div className="lg:flex lg:flex-col items-center">
+                        <img src={aboutImg2} alt="" className="" />
                         <p className="mt-8">
                             I GrowMoreServices & Consultancy is a unique agency in India of
                             outsource sales and marketing, being the first to truly offer
@@ -47,21 +47,21 @@ function AboutUs() {
     // OUR VISIONS
     function Vision() {
         return (
-            <div className="flex flex-col items-center justify-center px-5">
+            <div className="flex flex-col items-center justify-center px-5  xl:py-16">
                 <div className="flex flex-col  items-center gap-y-5">
-                    <div className='bg-[#12204d36] p-5 rounded-full'>
+                    <div className='bg-applicationIconBg p-5 rounded-full'>
                         <GiEyeTarget className='text-4xl text-blue-950' />
                         {/* <img src={visionImg} alt="" className="w-12 text-blue-900" /> */}
                     </div>
                     <h5 className="text-applicationColor font-extrabold text-4xl">Our Vision</h5>
                 </div>
-                <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-12">
+                <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-12">
                     {vision.map((vision, idx) => (
                         <div
                             key={idx}
                             className="border-2  bg-gray-100 rounded-xl hover:bg-applicationColor group p-5  my-7 drop-shadow-sm"
                         >
-                            <p className="text-lg text-gray-600 text-center group-hover:text-white">
+                            <p className="text-lg xl:font-semibold text-gray-500 text-center group-hover:text-white">
                                 {vision.vision}
                             </p>
                         </div>
@@ -73,7 +73,7 @@ function AboutUs() {
 
     function Mission() {
         return (
-            <div className="flex flex-col items-center justify-center px-5 my-16 gap-y-8">
+            <div className="flex flex-col items-center justify-center px-5 py-24 gap-y-8 ">
                 <div className="flex flex-col items-center gap-y-5 ">
                     <div className='bg-applicationIconBg p-5 rounded-full'>
                         <TbTargetArrow className="text-applicationColor text-4xl " />
@@ -82,7 +82,7 @@ function AboutUs() {
                     <h5 className="text-blue-950 font-extrabold text-4xl">Our Mission</h5>
                 </div>
                 {/* <div className="border-2 bg-gray-100 rounded-2xl hover:bg-[#1c2e4a] group text-white p-5  my-7"> */}
-                <p className="text-xl text-gray-600 px-5  md:px-12 text-center">
+                <p className="text-xl text-gray-600 px-5  md:px-12 xl:px-24 text-center">
                     Our recruitment process is designed to identify and attract top
                     talent in the industry, ensuring that our clients have access to the
                     most qualified andskilled professionals. We understand the

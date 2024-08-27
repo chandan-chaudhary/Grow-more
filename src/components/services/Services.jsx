@@ -4,9 +4,9 @@ import { GrServices } from "react-icons/gr";
 function Services() {
     return (
         <section className='bg-gray-100'>
-            <div className=' flex flex-col items-center justify-center gap-y-16 px-5 pt-32 py-12'>
+            <div className=' flex flex-col items-center justify-center gap-y-16 px-5 pt-32 py-12 xl:px-72'>
                 <div className='flex flex-col items-center'>
-                    <div className='bg-[#12204d4f] p-5 rounded-full'>
+                    <div className='bg-applicationIconBg p-5 rounded-full'>
                         <GrServices className='text-applicationColor text-4xl gap-y-5' />
                     </div>
                     <h5 className='text-4xl font-extrabold text-applicationColor '>Our Services</h5>
