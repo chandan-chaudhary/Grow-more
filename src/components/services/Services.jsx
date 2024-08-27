@@ -1,11 +1,17 @@
 import React from 'react'
+import { GrServices } from "react-icons/gr";
 
 function Services() {
     return (
-        <section className='bg-gray-200'>
-            <div className=' flex flex-col items-center justify-center gap-y-8 px-5 pt-32 py-12'>
-                <h5 className='text-4xl font-bold '>Our Services</h5>
-                <p className='text-gray-600 text-center text-xl'>Sales strategy development, market research and analysis, sales training and coaching, sales enablement tools and resources,
+        <section className='bg-gray-100'>
+            <div className=' flex flex-col items-center justify-center gap-y-16 px-5 pt-32 py-12'>
+                <div className='flex flex-col items-center'>
+                    <div className='bg-[#12204d4f] p-5 rounded-full'>
+                        <GrServices className='text-applicationColor text-4xl gap-y-5' />
+                    </div>
+                    <h5 className='text-4xl font-extrabold text-applicationColor '>Our Services</h5>
+                </div>
+                <p className='text-gray-600 text-center text-xl md:px-24'>Sales strategy development, market research and analysis, sales training and coaching, sales enablement tools and resources,
                     and sales performance measurement and optimization. Our external offerings include lead generation and appointment setting
                     services, sales outsourcing and tele sales solutions, and sales channel management and distribution network optimization. We
                     also provide sales technology solutions such as CRM implementation, sales automation tools, and sales analytics software. Our

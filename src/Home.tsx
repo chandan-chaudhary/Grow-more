@@ -5,7 +5,7 @@ import Services from './components/services/Services';
 
 function Home() {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-100">
       <LandingPage />
       <AboutUs />
       <Services />
